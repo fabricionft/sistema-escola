@@ -1,0 +1,127 @@
+main{
+    width: 100%;
+    min-height: 90%;
+    max-height: 500000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 35px solid rgb(244, 245, 247);
+    width: 80%;
+    height: 100%;
+}
+
+.produto{
+    margin: 0% 1% 35px 2%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 21.3%;
+    height: 425px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.produto:hover{
+    background: rgb(170, 206, 241);
+    border: 1px solid rgb(28, 167, 253);
+}
+
+.linha{
+    margin: 0;
+    width: 102%;
+    height: 3px;
+    border: none;
+    box-shadow: none;
+    background: rgb(244, 245, 247);
+}
+
+.titulo{
+    border-radius: 3px 3px 0 0;
+    background: linear-gradient(-229deg, #1E90FF, #41d1c0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #feffff;
+    width: 100%;
+    height: 12%;
+    text-transform: uppercase;
+}
+
+.img{
+    width: 88%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLoja{
+    width: 150px;
+}
+
+.descricao{
+    color: rgb(85, 82, 82);
+    width: 88%;
+    height: 22%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.valor{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #5ba954;
+    width: 88%;
+    height: 10.49%;
+    font-size: 19px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/*@media screen and (max-width: 1000px){
+    .produto{width: 45%;}
+}*/
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 85%;
+        border-top: 70px solid rgb(244, 245, 247);
+    }
+
+    .produto{
+        width: 90%;
+        height: 800px;
+        margin-bottom: 70px;
+        border-radius: 15px;
+    }
+
+    .titulo{
+        border-radius: 15px 15px 0 0;
+        font-size: 3em;
+    }
+
+    .imgLoja{
+        width: 350px;
+    }
+
+    .linha{
+        height: 7px;
+    }
+
+    .descricao, .valor{
+        font-size: 2.5em;
+    }
+
+    .container{justify-content: center;}
+}

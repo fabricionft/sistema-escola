@@ -1,0 +1,161 @@
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+		<title>Início</title>
+		<link rel="stylesheet" type="text/css" href="css/aluno/universal.css">
+		<link rel="stylesheet" type="text/css" href="css/aluno/index.css">
+		<link rel="next" href="menuAluno.html">
+		
+		<script
+				src="https://code.jquery.com/jquery-3.6.1.min.js"
+				integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+				crossorigin="anonymous" defer>
+		</script>
+		<script src="js/aluno/logar.js" defer></script>
+
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header class="headerHeader">
+			<label class="labelVoltar" for="check">
+				<img src="icon/iconMenu.png" class="iconMenu">
+			</label>
+
+			<a class="aHeader" href="index.html">Início</a>
+			<a class="aHeader" href="info.html">Informações</a>
+			<a class="aHeader" href="https://youtube.com.br/@fabricionft">Canal Youtube</a>
+		</header>
+
+		<!--Conteúdo-->
+		<main>
+			<div class="containerForm">
+				<div class="b">
+					<img src="img/educacao1.png" class="educacao">
+				</div>
+
+				<div class="form">
+					<form class="formIndex">
+						<div class="linha">
+							<input class="inputForm" type="text" placeholder="Usuário" id="user">
+							<img src="icon/user.png" class="iconeInput">
+						</div>
+	
+						<div class="linha">
+							<input class="inputForm" type="password" placeholder="Senha" id="senha">
+							<img src="icon/olho.png" class="iconeInput" id="btnSenha">
+						</div>
+	
+						<div class="linha">
+							<select class="inputForm" id="escolha">
+								<option value="escolha">Escolha</option>
+								<option value="aluno">Aluno</option>
+								<option value="funcionario">Funcionário</option>
+							</select>
+						</div>
+					</form>
+	
+					<footer class="footerIndex">
+						<a class="btn" onclick="logar()">Login</a>
+						<p class="pForm">Ainda não tem conta?</p>
+						<a class="aForm" href="">Clique aqui</a>
+					</footer>
+				</div>
+			</div>
+
+			<!--Menu-->
+			<input class="inputMenu" type="checkbox" id="check">
+			<nav class="navMenu">
+				<div class="divBotao">
+					
+					<a class="aMenu" href="index.html">
+						<p class="nome">Ínicio</p>
+						<img class="icone" src="icon/maior.jfif">
+					</a>
+
+					<a class="aMenu" href="info.html">
+						<p class="nome">Informações</p>
+						<img  class="icone" src="icon/maior.jfif">
+					</a>
+
+				</div>
+
+				<div class="esconder">
+					<label class="labelMenu2" for="check">
+						<img src="icon/esconder.png" class="iconeEsconder">
+					</label>
+				</div>
+			</nav>
+		</main>
+
+		<!--Footer-->
+		<footer class="containerFooter">
+
+			<div class="divFooterMargem">
+				<!--1-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Informações sobre</h1>
+					<p class="pFooter">Este site terá como objetivo proporcionar uma experiência mais agradável para pessoas dentro de uma escola</p>
+				</div>
+
+				<!--2-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Contatos</h1>
+					<p class="pFooter">fabriciodozerofz859@gmail.com</p>
+					<p class="pFooter">(19) 98459-7236</p>
+				</div>
+
+				<!--3-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Dúvidas</h1>
+
+					<a class="aFooter">Como conseguir uma conta</a> <br>
+
+					<a class="aFooter">Como acessar minha conta</a> <br>
+
+					<a class="aFooter">Como recuperar senha</a> <br>
+				</div>
+
+				<!--4-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Redes sociais</h1>
+
+					<a class="aFooter">linkedin</a> <br>
+
+					<a class="aFooter">Instagram</a> <br>
+
+					<a class="aFooter">Github</a> <br>
+
+					<a class="aFooter">Facebook</a> <br>
+				</div>
+			</div>
+
+			<!--Redes sociais-->
+			<div class="divFooterRedes">
+				<h1 class="h1Footer">Redes sociais</h1>
+
+				<a class="aFooter" href="https://www.linkedin.com/in/fabricio-nft">
+					<img class="icon" src="icon/linkedin.png">
+				</a>
+
+				<a class="aFooter" href="https://www.instagram.com/fabricio_nft/">
+					<img class="icon" src="icon/instagram.png">
+				</a>
+
+				<a class="aFooter" href="https://github.com/fabricionft">
+					<img class="icon" src="icon/github-sign.png">
+				</a>
+
+				<a class="aFooter" href="https://youtube.com.br/@fabricionft">
+					<img class="icon" src="icon/youtube.png">
+				</a>
+			</div>
+
+		</footer>
+	
+	</body>
+
+</html>

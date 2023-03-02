@@ -1,0 +1,331 @@
+/*Body -----------------------------------------------------------------*/
+body{
+	background: rgb(244, 245, 247);
+	margin: 0px;
+	padding: 0px
+}
+/*-----------------------------------------------------------------------*/
+
+
+/*Header ---------------------------------------------------------------*/
+.headerHeader, .headerHeaderMenu{
+	display: flex;
+	align-items: center;
+	font-family: arial;
+	height: 50px;
+	width: 100%;
+	background: linear-gradient(-229deg, #1E90FF, #41d1c0);
+}
+
+.headerHeader1{
+    justify-content: center;
+}
+
+.aHeader{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-left: 60px;
+	margin-right: -30px;
+	font-size:15px;
+	color: white;
+	text-decoration: none;
+}
+
+
+.aHeader:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.iconMenu{width: 20px; cursor: pointer;}
+
+.iconCasa{display: none;}
+/*-----------------------------------------------------------------------*/
+
+
+/*Menu bar --------------------------------------------------------------*/
+.labelVoltar{
+	background-color: #ffffff00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 30px;
+}
+
+.labelMenu{
+	background-color: #ffffff00;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	z-index: 1;
+}
+
+.navMenu, .navMenu2{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background: rgb(255, 255, 255, .0);
+	position: fixed;
+	width: 100%;
+	height: 111%;
+	margin: 0;
+	left: -100%;
+}
+
+.navMenu2{
+	margin-top:-6%}
+
+.esconder{
+	background: rgba(0, 0, 0, 0.45);
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.iconeEsconder{
+	width: 20px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.divBotao, .divBotaof{
+	background: rgb(255, 255, 255);
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.aMenu, .aMenuPerfil{
+	width: 100%;
+	height: 8%;
+	background: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.aMenu:hover{
+	background: rgb(232, 227, 227);
+}
+
+.nome{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 30px;
+	color: rgb(64, 59, 59);
+}
+
+.icone{
+	margin-right:30px;
+	height: 22px;
+	width: 8px;
+}
+
+.icone1{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.aMenuPerfil{
+	background: #012e57;
+}
+
+/*---Transformações----*/
+.inputMenu[type="checkbox"]:checked~nav
+{
+	transform: translateX(100%);
+}
+
+.inputMenu[type="checkbox"]:checked~.labelMenu
+{
+	transform: translateX(-100%);
+	position: fixed;
+}
+
+.inputMenu[type="checkbox"]
+{
+	display:none;
+}
+/*-------------------------------------------------------------------------*/
+
+
+/*Footer ------------------------------------------------------------------*/
+.containerFooter{
+	background: #1E90FF;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.divFooterMargem{
+	width: 65%;
+	height: 55%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.divFooterInfo{
+	width: 25%;
+	text-align: center;
+}
+
+.divFooterRedes{
+	width: 100%;
+	height: 45%;
+	text-align: center;
+	background: #1475d6;
+}
+
+.h1Footer{
+	margin-top: 17.5px;
+	margin-bottom: 17.5px;
+	color: white;
+	font-size: 17px;
+	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+}
+
+.pFooter, .aFooter{
+	text-decoration: none;
+	margin: 7px;
+	color: gainsboro;
+	font-size: 13px;
+	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+}
+
+.aFooter:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+.icon{
+	width: 30px;
+}
+/*-------------------------------------------------------------------------*/
+
+/*-Teste*/
+@media screen and (max-width: 1000px){
+
+	/*HEADER*/
+	.headerHeader, .headerHeaderMenu{
+		height: 8%;
+	}
+
+	.headerHeaderMenu{
+	justify-content: center;}
+
+	.aHeader{
+		display: none;
+	}
+
+	.subHeader{
+		width: 90%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	/*MENU*/
+	.labelMenu{
+		background-color: #ffffff00;
+		top: 35px;
+		left: 20px;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.navMenu2{margin-top: -18%;}
+
+	.iconMenu{
+		width: 80px;
+	}
+
+	.iconCasa{
+		display: flex;
+		width: 80px;
+	}
+
+	.divBotao{
+		width: 75%;
+		height: 100%;
+	}
+
+	.aMenu{
+		font-size: 2.5em;
+	}
+
+	.esconder{
+		background: rgba(0, 0, 0, 0.45);
+		width: 25%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.iconeEsconder{
+		width: 70px;
+	}
+	
+	.divBotao, .divBotaof{
+		background: rgb(255, 255, 255);
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.aMenu{
+		height: 8%;
+	}
+
+	.nome{
+		font-size: 1.2em;
+		padding-left: 20px;
+	}
+
+	.icone, .icone1{
+		width: 30px;
+		height: 35%;
+		margin-right:50px;
+	}
+
+	.icone1{
+		width: 65px;
+		height: 65px;
+	}
+
+	/*FOOTER*/
+	.containerFooter{
+		height: 75%;
+	}
+
+	.divFooterMargem{
+		height: 80%;
+	}
+
+	.divFooterInfo{
+		width: 100%;
+	}
+
+	.h1Footer{
+		margin-top: 40px;
+		margin-bottom: 25px;
+		font-size: 3em;
+	}
+
+	.pFooter, .aFooter{
+		font-size: 2em;
+	}
+
+	.divFooterRedes{
+		height: 20%;
+	}
+    
+	.icon{
+		width: 80px;
+	}
+}

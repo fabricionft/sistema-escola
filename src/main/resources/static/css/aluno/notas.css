@@ -1,0 +1,186 @@
+.main{
+	width: 100%;
+	height: 110%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 70%;
+	height: 85%;
+}
+
+.divTexto, .divBotoes{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.divTexto{
+	background: linear-gradient(-290deg, #1E90FF, #41d1c0);
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.divBotoes{
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: flex-end;
+}
+
+.headerNotas{
+	width: 70%;
+	height: 15%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 35px;
+	color: white;
+}
+
+.info{
+	width: 100%;
+	height: 85%;
+	background: white;
+}
+
+.linha{
+	width: 100%;
+	height: 8.33%;
+	display: flex;
+}
+
+.coluna, .coluna2{
+	width: 14%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(52, 50, 50);
+	border: 1px solid rgb(221, 216, 216);
+}
+
+.coluna2{
+	width: 7.5%;
+}
+
+
+.linhaBtn{
+    position: relative;
+    width: 230PX;
+    height: 40px;
+}
+
+
+.moldura{
+    border-radius: 0 5px 5px 0;
+    background: rgb(52, 109, 215);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+}
+
+.iconeMaterial{
+	width: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #1E90FF;
+	color: white;
+	bottom: 0;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #18bdaa;
+}
+
+.btn:hover + .moldura{
+    cursor: pointer;
+    background: #18bdaa;
+}
+
+.escolhe{
+	width: 50%;
+	height: 40px;
+	display: none;
+	border-radius: 5px;
+	border: 1px solid white;
+	padding-left: 10px;
+	background: white;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	cursor: pointer;
+}
+
+.escolhe:hover{
+	border: 1px solid #4195d1;
+}
+
+@media screen and (max-width: 1000px){
+
+	.container{
+		width: 85%;
+	}
+
+	.headerNotas{
+		justify-content: space-between;
+		font-size: 4em;
+	}
+
+	.escolhe{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40%;
+	}
+
+	.coluna, .coluna2{
+		font-size: 1.75em;
+		width: 20%;
+	}
+
+    .coluna2{
+		display: none;
+	}
+
+	.divBotoes{
+		justify-content: center;
+	}
+
+	.escolhe{
+		font-size: 0.5em;
+	}
+
+	.moldura{
+		width: 125px;
+	}
+
+	.btn, .linhaBtn{
+		width: 100%;
+		height: 100px;
+		font-size: 1.75em;
+		border-radius: 14px;
+	}
+
+	.iconeMaterial{
+		width: 60px;
+	}
+}

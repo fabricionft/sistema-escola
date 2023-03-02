@@ -1,0 +1,169 @@
+/*Form novo*/
+.containerNovoNota{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
+}
+
+.containerNovoNota.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.formulario{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+
+.headerForm{
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    justify-content: right;
+    background: rgb(12, 86, 146);
+    border-radius: 5px 5px 0 0;
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    width: 95%;
+    height: 80%;
+}
+
+.divBotao{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    width: 80%;
+    height: 12.5%;
+}
+
+.divisor, .divisor2, .divisor3, .divisor5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19%;
+    height: 16%;
+    position: relative;
+}
+
+.divisor2{
+    width: 40%;
+}
+
+.divisor3{
+    width: 16%;
+}
+
+.divisor5{
+    width: 100%;
+    height: 10%;
+    align-items: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(12, 86, 146);
+}
+
+.titulo{
+    width: 93%;
+}
+
+.subtituloForm{
+    left: 10px;
+    top: -15px;
+    color: rgb(47, 48, 49);
+    position: absolute;
+}
+
+.inputNota, .inputTurma, .inputAluno, .inputBimestre{
+    width: 80%;
+    height: 40%;
+    padding-left: 5px;
+    color: rgb(76, 68, 68);
+    background: rgb(238, 241, 244);
+    border: 1px solid rgb(219, 223, 229);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.inputBimestre, .inputTurma, .inputAluno{
+    position: absolute;
+}
+
+.inputAluno{
+    width: 92%;
+}
+
+
+.inputNota:hover, .inputAluno:hover{
+    cursor: pointer;
+    border: 1px solid rgb(23, 201, 255);
+}
+
+/*Botões*/
+.btnFechar, .btnSalvar, .btnLimpar{
+    width: 60px;
+    height: 100%;
+    background: rgb(12, 86, 146);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btnSalvar{
+    position: absolute;
+}
+
+.btnSalvar, .btnLimpar{
+    width: 100px;
+    height: 45%;
+    background: green;
+}
+
+.btnLimpar{
+    background: rgb(12, 86, 146);
+    margin-right: 120px;
+}
+
+.btnImagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(41, 41, 40);
+    color: white;
+}
+
+/*Hover botões*/
+.btnFechar:hover, .btnLimpar:hover, .btnSalvar:hover, .btnImagem:hover{
+    cursor: pointer;
+}
+
+.btnSalvar:hover{
+    background: rgb(4, 90, 4);
+}
+
+.btnLimpar:hover{
+    background: rgb(5, 53, 93);
+}
+
+.btnImagem:hover{
+    background: rgb(24, 24, 24);
+}

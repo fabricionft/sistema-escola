@@ -1,0 +1,117 @@
+main{
+    width: 100%;
+    min-height: 90%;
+    max-height: 50000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRecado{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 35px solid rgb(244, 245, 247);
+}
+
+.divRecado{
+    background: rgb(255, 255, 255);
+    width: 47.5%;
+    height: 450px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.divTitulo{
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(-229deg, #1E90FF, #41d1c0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17.5px;
+    color: white;
+}
+
+.divInfo, .divData{
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.divData{
+    height: 15%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divisor{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo, .subtituloRecado{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1475d6;
+    margin: 0;
+}
+
+.subtituloRecado{
+    margin-top: 10px;
+}
+
+.texto{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626466;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 1000px){
+
+    .containerRecado{
+        width: 85%;
+        border-top: 70px solid rgb(244, 245, 247);
+    }
+
+    .divRecado{
+        width: 100%;
+        height: 800px;
+        margin-bottom: 70px;
+        border-radius: 15px;
+    }
+
+    .divTitulo{
+        border-radius: 15px 15px 0 0;
+        font-size: 2.25em;
+    }
+
+    .subtitulo, .subtituloRecado, .texto{
+        font-size: 2.5em;
+    }
+
+    .texto{
+        margin-top: 10px;
+    }
+
+    .subtituloRecado{
+        margin-top: 35px;
+    }
+
+}

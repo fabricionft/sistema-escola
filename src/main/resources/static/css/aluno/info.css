@@ -1,0 +1,84 @@
+*{
+    color: rgb(121, 119, 119);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    width: 100%;
+	min-height: 100%;
+    max-height: 20000px;
+    border-top: 25px solid rgb(244, 245, 247);
+    border-bottom: 25px solid rgb(244, 245, 247);
+	display: flex;
+	justify-content: center;
+    align-items: flex-start;
+}
+
+.containerInfo{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre, .funcionalidades, .duvidas1, .duvidas2, .duvidas3{
+    height: 300px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.duvidas2{height: 250px;}
+.duvidas3{height: 335px;}
+
+.duvidas1, .duvidas2, .duvidas3{
+    width: 100%;
+}
+
+.headerTitulo, .headerTituloDuvidas{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.divTexto, .divTextoDuvidas{
+    width: 75%;
+    height: 85%;
+}
+
+.headerTituloDuvidas, .divTextoDuvidas{
+    justify-content: flex-start;
+    width: 88%;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sobre, .funcionalidades, .duvidas1, .duvidas2, .duvidas3{
+        width: 100%;
+    }
+
+    .sobre{height: 815px;}
+    .funcionalidades{height: 800px;}
+    .duvidas1{height: 1120px;}
+    .duvidas2{height: 800px;}
+    .duvidas3{height: 1100px;}
+
+    .headerTitulo, .headerTituloDuvidas, .divTexto,  .divTextoDuvidas{
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    .headerTitulo, .headerTituloDuvidas{
+        justify-content: center;
+        text-align: center;
+        height: 150px;
+
+    }
+
+    .divTexto, .divTextoDuvidas{
+        height: 86%;
+    }
+}

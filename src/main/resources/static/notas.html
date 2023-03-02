@@ -1,0 +1,270 @@
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Notas</title>
+
+	<link rel="stylesheet" type="text/css" href="css/aluno/universal.css">
+	<link rel="stylesheet" type="text/css" href="css/aluno/notas.css">
+
+	<script src="js/aluno/notas.js"></script>
+	<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous" defer>
+	</script>
+
+</head>
+
+
+<body>
+
+<!--Header-->
+<header class="headerHeader"><br>
+	<label class="labelVoltar">
+		<a href="menuAluno.html">
+			<img src="icon/botao-de-retorno.png" class="iconeEsconder">
+		</a>
+	</label>
+</header>
+
+<!--Notas-->
+<main class="main">
+
+	<div class="container">
+
+		<div class="divTexto">
+			<header class="headerNotas">
+				<p id="titulo">NOTAS</p>
+				<select id="escolha" class="escolhe" onclick="mudar()">
+					<option value="notas">Notas</option>
+					<option value="faltas">Faltas</option>
+				</select>
+			</header>
+
+			<div class="info" id="info">
+				<div class="linha">
+					<div class="coluna">Matérias</div>
+					<div class="coluna">1º Bim</div>
+					<div class="coluna2">F</div>
+					<div class="coluna">2º Bim</div>
+					<div class="coluna2">F</div>
+					<div class="coluna">3º Bim</div>
+					<div class="coluna2">F</div>
+					<div class="coluna">4º Bim</div>
+					<div class="coluna2">F</div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Matemática</div>
+					<div class="coluna" id="nota-1"></div>
+					<div class="coluna2" id="falta-1"></div>
+					<div class="coluna" id="nota-12"></div>
+					<div class="coluna2" id="falta-12"></div>
+					<div class="coluna" id="nota-23"></div>
+					<div class="coluna2" id="falta-23"></div>
+					<div class="coluna" id="nota-34"></div>
+					<div class="coluna2" id="falta-34"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Português</div>
+					<div class="coluna" id="nota-2"></div>
+					<div class="coluna2" id="falta-2"></div>
+					<div class="coluna" id="nota-13"></div>
+					<div class="coluna2" id="falta-13"></div>
+					<div class="coluna" id="nota-24"></div>
+					<div class="coluna2" id="falta-24"></div>
+					<div class="coluna" id="nota-35"></div>
+					<div class="coluna2" id="falta-35"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">História</div>
+					<div class="coluna" id="nota-3"></div>
+					<div class="coluna2" id="falta-3"></div>
+					<div class="coluna" id="nota-14"></div>
+					<div class="coluna2" id="falta-14"></div>
+					<div class="coluna" id="nota-25"></div>
+					<div class="coluna2" id="falta-25"></div>
+					<div class="coluna" id="nota-36"></div>
+					<div class="coluna2" id="falta-36"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Geografia</div>
+					<div class="coluna" id="nota-4"></div>
+					<div class="coluna2" id="falta-4"></div>
+					<div class="coluna" id="nota-15"></div>
+					<div class="coluna2" id="falta-15"></div>
+					<div class="coluna" id="nota-26"></div>
+					<div class="coluna2" id="falta-26"></div>
+					<div class="coluna" id="nota-37"></div>
+					<div class="coluna2" id="falta-37"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Biologia</div>
+					<div class="coluna" id="nota-5"></div>
+					<div class="coluna2" id="falta-5"></div>
+					<div class="coluna" id="nota-16"></div>
+					<div class="coluna2" id="falta-16"></div>
+					<div class="coluna" id="nota-27"></div>
+					<div class="coluna2" id="falta-27"></div>
+					<div class="coluna" id="nota-38"></div>
+					<div class="coluna2" id="falta-38"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Fisica</div>
+					<div class="coluna" id="nota-6"></div>
+					<div class="coluna2" id="falta-6"></div>
+					<div class="coluna" id="nota-17"></div>
+					<div class="coluna2" id="falta-17"></div>
+					<div class="coluna" id="nota-28"></div>
+					<div class="coluna2" id="falta-28"></div>
+					<div class="coluna" id="nota-39"></div>
+					<div class="coluna2" id="falta-39"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Inglês</div>
+					<div class="coluna" id="nota-7"></div>
+					<div class="coluna2" id="falta-7"></div>
+					<div class="coluna" id="nota-18"></div>
+					<div class="coluna2" id="falta-18"></div>
+					<div class="coluna" id="nota-29"></div>
+					<div class="coluna2" id="falta-29"></div>
+					<div class="coluna" id="nota-40"></div>
+					<div class="coluna2" id="falta-40"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Filosofia</div>
+					<div class="coluna" id="nota-8"></div>
+					<div class="coluna2" id="falta-8"></div>
+					<div class="coluna" id="nota-19"></div>
+					<div class="coluna2" id="falta-19"></div>
+					<div class="coluna" id="nota-30"></div>
+					<div class="coluna2" id="falta-30"></div>
+					<div class="coluna" id="nota-41"></div>
+					<div class="coluna2" id="falta-41"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Sociologia</div>
+					<div class="coluna" id="nota-9"></div>
+					<div class="coluna2" id="falta-9"></div>
+					<div class="coluna" id="nota-20"></div>
+					<div class="coluna2" id="falta-20"></div>
+					<div class="coluna" id="nota-31"></div>
+					<div class="coluna2" id="falta-31"></div>
+					<div class="coluna" id="nota-42"></div>
+					<div class="coluna2" id="falta-42"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Ed.Fisica</div>
+					<div class="coluna" id="nota-10"></div>
+					<div class="coluna2" id="falta-10"></div>
+					<div class="coluna" id="nota-21"></div>
+					<div class="coluna2" id="falta-21"></div>
+					<div class="coluna" id="nota-32"></div>
+					<div class="coluna2" id="falta-32"></div>
+					<div class="coluna" id="nota-43"></div>
+					<div class="coluna2" id="falta-43"></div>
+				</div>
+
+				<div class="linha">
+					<div class="coluna">Quimica</div>
+					<div class="coluna" id="nota-11"></div>
+					<div class="coluna2" id="falta-11"></div>
+					<div class="coluna" id="nota-22"></div>
+					<div class="coluna2" id="falta-22"></div>
+					<div class="coluna" id="nota-33"></div>
+					<div class="coluna2" id="falta-33"></div>
+					<div class="coluna" id="nota-44"></div>
+					<div class="coluna2" id="falta-44"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="divBotoes">
+			<div class="linhaBtn">
+				<button class="btn" onclick="gerarPDF()">Donwload</button>
+				<div class="moldura"> <img src="icon/donwload.png" class="iconeMaterial"> </div>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+	<!--Footer-->
+	<footer class="containerFooter">
+
+		<div class="divFooterMargem">
+			<!--1-->
+			<div class="divFooterInfo">
+				<h1 class="h1Footer">Informações sobre</h1>
+				<p class="pFooter">Este site terá como objetivo proporcionar uma experiência mais agradável para pessoas dentro de uma escola</p>
+			</div>
+
+			<!--2-->
+			<div class="divFooterInfo">
+				<h1 class="h1Footer">Contatos</h1>
+				<p class="pFooter">fabriciodozerofz859@gmail.com</p>
+				<p class="pFooter">(19) 98459-7236</p>
+			</div>
+
+			<!--3-->
+			<div class="divFooterInfo">
+				<h1 class="h1Footer">Dúvidas</h1>
+
+				<a class="aFooter">Como conseguir uma conta</a> <br>
+
+				<a class="aFooter">Como acessar minha conta</a> <br>
+
+				<a class="aFooter">Como recuperar senha</a> <br>
+			</div>
+
+			<!--4-->
+			<div class="divFooterInfo">
+				<h1 class="h1Footer">Redes sociais</h1>
+
+				<a class="aFooter">linkedin</a> <br>
+
+				<a class="aFooter">Instagram</a> <br>
+
+				<a class="aFooter">Github</a> <br>
+
+				<a class="aFooter">Facebook</a> <br>
+			</div>
+		</div>
+
+		<!--Redes sociais-->
+		<div class="divFooterRedes">
+			<h1 class="h1Footer">Redes sociais</h1>
+
+			<a class="aFooter" href="https://www.linkedin.com/in/fabricio-nft">
+				<img class="icon" src="icon/linkedin.png">
+			</a>
+
+			<a class="aFooter" href="https://www.instagram.com/fabricio_nft/">
+				<img class="icon" src="icon/instagram.png">
+			</a>
+
+			<a class="aFooter" href="https://github.com/fabricionft">
+				<img class="icon" src="icon/github-sign.png">
+			</a>
+
+			<a class="aFooter" href="https://youtube.com.br/@fabricionft">
+				<img class="icon" src="icon/youtube.png">
+			</a>
+		</div>
+
+	</footer>
+
+<body>
+
+<html>

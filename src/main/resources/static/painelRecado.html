@@ -1,0 +1,269 @@
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/funcionario/universalFunc.css">
+    <link rel="stylesheet" type="text/css" href="css/funcionario/paineis/painelRecado.css">
+    <link rel="stylesheet" type="text/css" href="css/funcionario/forms/formRecado.css">
+
+    <script src="js/funcionario/form.js" defer></script>
+    <script src="js/funcionario/requests/recado.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous" defer>
+    </script>
+
+    <title>Recados</title>
+
+</head>
+
+<body>
+
+<!--Form Cadastro-->
+<div class="containerNovoRecado" id="containerNovoRecado">
+    <div class="formulario">
+        <header class="headerForm">
+            <button class="btnFechar" onclick="fechaRecado()">
+                <img src="icon/funcionario/x.png" width="22px">
+            </button>
+        </header>
+
+        <form class="dados" id="dados">
+            <div class="divisor">
+                <p class="subtituloForm">ID</p>
+                <input type="number" name="" id="codigo" class="idRecado" readonly>
+            </div>
+
+            <div class="divisor">
+                <p class="subtituloForm">Titulo</p>
+                <input type="text" id="titulo" class="idRecado" placeholder="Dê um titulo" required>
+            </div>
+
+            <div class="divisor2">
+                <p class="subtituloForm">Recado</p>
+                <textarea id="recado" class="recadoRecado" cols="28" rows="6" placeholder="Digite o recado" required></textarea>
+            </div>
+
+            <div class="divisor">
+                <p class="subtituloForm">Data</p>
+                <input type="date" id="data" class="dataRecado" required>
+            </div>
+
+            <div class="divisor">
+                <p class="subtituloForm">Horario</p>
+                <input type="time" id="horario" class="dataRecado" required>
+            </div>
+        </form>
+
+        <footer class="divBotao">
+            <button class="btnLimpar" type="reset" form="dados">Limpar</button>
+            <button class="btnSalvar" onclick="salvar()">Salvar</button>
+        </footer>
+    </div>
+</div>
+
+<main>
+
+    <header>
+        <div class="subHeader">
+            <a href="menuFuncionario.html">
+                <img class="voltar" src="icon/botao-de-retorno.png">
+            </a>
+
+            <label for="check" class="menu">
+                <img src="icon/iconMenu.png" class="iconMenuEsconder">
+            </label>
+        </div>
+    </header>
+
+    <!--Menu-->
+    <div class="container1">
+        <nav class="containerA">
+            <div class="itemSubtitulo">
+                <p>Formulários</p>
+            </div>
+
+            <a class="item" href="painelAluno.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/tampao-de-alunos.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Aluno</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelNotas.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconNotas.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Notas/Faltas</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelProvas.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconProva.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Provas</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelProduto.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconSacola.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo" href="cadProduto.html">
+                        <p>Produto</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelRecado.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconSino.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Recados</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelMaterial.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconLapis.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Materiais</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+        </nav>
+    </div>
+
+    <!--Menu esconder-->
+    <input type="checkbox" class="inputMenu" id="check">
+    <nav class="esconder">
+        <nav class="containerA1">
+            <div class="itemSubtitulo">
+                <p>Formulários</p>
+            </div>
+
+            <a class="item" href="painelAluno.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/tampao-de-alunos.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Aluno</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelNotas.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconNotas.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Notas/Faltas</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelProvas.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconProva.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Provas</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelProduto.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconSacola.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo" href="cadProduto.html">
+                        <p>Produto</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelRecado.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconSino.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Recados</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+
+            <a class="item" href="painelMaterial.html">
+                <div class="itemImagem">
+                    <img src="icon/funcionario/iconLapis.png" class="iconOpcao">
+                </div>
+                <div class="itemInfo">
+                        <p>Materiais</p>
+                        <img src="icon/funcionario/maior.png" class="iconSeta">
+                </div>
+            </a>
+        </nav>
+
+        <div class="botao">
+            <input type="checkbox" class="inputMenu" id="check">
+            <label for="check" class="menu">
+                <img src="icon/funcionario/esconder.png" class="iconEsconder">
+            </label>
+        </div>
+    </nav>
+
+    <!--Conteúdo-->
+    <div class="container2">
+
+        <main class="main">
+            <div class="containerProduto">
+
+                <header class="headerPainel">
+
+                    <a type="button" class="btnNovo" onclick="abreRecado()">Novo</a>
+
+                </header>
+
+                <div class="painel" id="painel">
+                    <div class="linhaPrincipal">
+                        <div class="colunaPrincial_1">
+                            <p class="texto">ID</p>
+                        </div>
+
+                        <div class="colunaPrincial_3">
+                            <p class="texto">Data</p>
+                        </div>
+
+                        <div class="colunaPrincial_2">
+                            <p class="texto">Evento</p>
+                        </div>
+
+                        <div class="colunaPrincial_4">
+                            <p>Ação</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</main>
+
+</body>
+
+</html>

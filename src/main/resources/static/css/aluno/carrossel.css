@@ -1,0 +1,92 @@
+.carrosel {
+    -webkit-perspective: 250px;
+    -moz-perspective: 250px;
+    width: 75%;
+    height: 80%;
+    position: relative;
+}
+
+@-webkit-keyframes efeitoCarrosel {
+    from {
+        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+.caixa{
+    width: 25%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 37.5%;
+    font-size: 9px;
+    border-radius: 10px;
+    border: 1px solid rgb(237, 235, 235);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    animation: efeitoCarrosel 30s linear infinite;      
+}
+
+.caixa.card1, .caixa.card2, .caixa.card3,
+.caixa.card4, .caixa.card5, .caixa.card6 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+ }
+
+.caixa.card1 {animation-delay: -25s;}
+.caixa.card2 {animation-delay: -20s;}
+.caixa.card3 {animation-delay: -15s;}
+.caixa.card4 {animation-delay: -10s;}
+.caixa.card5 {animation-delay: -5s;}
+.caixa.card6 {animation-delay: -0s;}
+
+.tituloCard{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.25em;
+}
+
+.conteudoCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 75%;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1000px){
+    .carrosel{
+        width: 100%;
+    }
+
+    .caixa{
+        left: 32.5%;
+        width: 35%;
+        height: 40%;
+    }
+
+    .tituloCard, .conteudoCard{
+        font-size: 2.5em;
+    }
+}

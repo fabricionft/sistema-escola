@@ -1,0 +1,182 @@
+/*Form novo*/
+.containerNovoAluno{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
+}
+
+.containerNovoAluno.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 450px;
+    background: white;
+    border-radius: 5px;
+}
+
+.headerForm{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: right;
+    background: rgb(12, 86, 146);
+    border-radius: 5px 5px 0 0;
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+    margin: 0;
+}
+
+.divBotao{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 92.75%;
+    height: 15%;
+}
+
+.divisor1, .divisor2, .divisor3, .divisor4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25%;
+    width: 20%;
+    position: relative;
+}
+
+.divisor2{
+    width: 42.5%;
+}
+
+.divisor3{
+    width: 27.5%;
+}
+
+.divisor4{
+    width: 35%;
+}
+
+.subtituloForm{
+    margin: 0 0 0 20;
+    color: rgb(79, 81, 82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    top: 14px;
+    position: absolute;
+}
+
+.inputProva, .inputNome, .inputUsuario, .inputData ,.inputEscola, .inputSenha, .linhaF{
+    width: 90px;
+    height: 35px;
+    background: rgb(238, 241, 244);
+    border: 1px solid rgb(219, 223, 229);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    color: rgb(76, 68, 68);
+    margin-left: 20px;
+    padding-left: 5px;
+    bottom: 15px;
+    position: absolute;
+}
+
+.linhaF{
+    position: relative;
+    bottom: -10px;
+    box-shadow: none;
+    border: none;
+}
+
+.inputNome, .inputUsuario{
+    width: 225px;
+}
+
+.inputUsuario{
+    box-shadow: none;
+    border: none;
+}
+
+.inputData, .linhaF{
+    width: 135px;
+}
+
+.inputEscola{
+    width: 180px;
+}
+
+.inputSenha{
+    width: 140px;
+    margin-left: -5px;
+    padding-right: 40px;
+    bottom: 0px;
+}
+
+.inputProva:hover, .inputNome:hover, .inputData:hover, .inputEscola:hover{
+    cursor: pointer;
+    border: 1px solid rgb(23, 201, 255);
+}
+
+.iconeInput{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+	width: 25px;
+}
+
+/*Botões*/
+.btnFechar, .btnSalvar, .btnLimpar{
+    width: 60px;
+    height: 100%;
+    background: rgb(12, 86, 146);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btnSalvar, .btnLimpar{
+    width: 100px;
+    height: 45%;
+    background: green;
+}
+
+.btnSalvar{
+    position: absolute;
+}
+
+.btnLimpar{
+    background: rgb(12, 86, 146);
+    margin-right: 120px;
+}
+
+/*Hover botões*/
+.btnFechar:hover, .btnLimpar:hover, .btnSalvar:hover{
+    cursor: pointer;
+}
+
+.btnSalvar:hover{
+    background: rgb(4, 90, 4);
+}
+
+.btnLimpar:hover{
+    background: rgb(5, 53, 93);
+}

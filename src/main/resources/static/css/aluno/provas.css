@@ -1,0 +1,127 @@
+main{
+    width: 100%;
+    min-height: 90%;
+    max-height: 50000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.obs1, .obs2{
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+}
+
+.obs2{
+    display: none;
+}
+
+.containerProvas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-top: 30px solid rgb(244, 245, 247);
+    width: 80%;
+    height: 100%;
+}
+
+.card__giratorio {
+    margin: 0 20px 30px 0;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.card__giratorio-conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card__giratorio:hover .card__giratorio-conteudo {
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-229deg, #1E90FF, #41d1c0);
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.card__giratorio-conteudo--traseira {
+    transform: rotateY(180deg);
+}
+
+.numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.disciplina, .conteudo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17.5px;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo{
+    width: 80%;
+    height: 80%;font-size: 15px;
+}
+
+@media screen and (max-width: 1000px){
+
+    .containerProvas{
+        width: 85%;
+        border-top: 70px solid rgb(244, 245, 247);
+    }
+
+	.obs1{
+        display: none;
+    }
+
+    .obs2{
+        display: flex;
+        font-size: 2em;
+    }
+
+    .card__giratorio{
+        width: 350px;
+        height: 350px;
+        margin: 0 50px 70px 0;
+    }
+
+    .numero{
+        font-size: 4.5em;
+    }
+
+    .disciplina, .conteudo{
+        font-size: 3em;
+    }
+}

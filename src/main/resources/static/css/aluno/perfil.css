@@ -1,0 +1,218 @@
+main{
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+/*Container 1*/
+.containerAluno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+}
+
+.fundoPerfil{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.div1, .div2, .div3{
+    width: 98%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.div2{
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.div3{
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.moldura{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 25px;
+}
+
+.btnVoltar, .moldura, .img, .nomeAluno{
+    position: absolute;
+}
+
+.btnVoltar{
+    width: 23px;
+}
+
+.img{
+    opacity: 0;
+    width: 120px;
+}
+
+/*DIV 2*/
+.containerDados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    height: 75%;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 32%;
+    height: 100%;
+}
+
+.divTitulo{
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    font-size: 22.5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #092f55;
+    text-transform: uppercase;
+}
+
+
+.h1Titulo{
+    margin: 0;
+    font-size: 22.5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #092f55;
+    text-transform: uppercase;
+}
+
+.divInfos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    width: 60%;
+    height: 40px;
+    background: #1E90FF;
+    border: none;
+    border-radius: 5px;
+    bottom: 50%;
+    left: 50%;
+}
+
+.btn:hover{
+    background: #1475d6;
+    cursor: pointer;
+}
+
+.divBotao{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background: transparent;
+}
+
+
+.cont, .tit{
+    margin-bottom: -20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: rgb(105, 100, 100);
+}
+
+.tit{
+    margin-top: 35;
+    color:#1475d6;
+}
+
+@media screen and (max-width: 1000px){
+
+    main{
+        height: 135%;
+    }
+
+    .containerAluno{
+        height: 20%;
+    }
+
+    .btnVoltar{
+        width: 60px;
+        margin-left: 25px;
+    }
+
+    .img{
+        bottom: -70px;
+        width: 19em;
+    }
+
+    .nomeAluno{
+        bottom: -30px;
+        font-size: 5em;
+    }
+
+    .containerDados{
+        width: 75%;
+        height: 82.5%;
+    }
+
+    .divTitulo{
+        justify-content: center;
+    }
+
+    .divInfo{
+        width: 100%;
+        height: 33%;
+    }
+
+    .btn{
+        width: 100%;
+        height: 120px;
+        font-size: 3em;
+    }
+
+    .h1Titulo{
+        font-size: 2em;
+    }
+
+    .cont, .tit{
+        font-size: 2.5em;
+    }
+
+}

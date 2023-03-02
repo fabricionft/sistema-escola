@@ -1,0 +1,308 @@
+main{
+    width: 100%;
+    min-height: 90%;
+    max-height: 50000px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.containerMaterial{
+    border-top: 35px solid rgb(244, 245, 247);
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divMaterial{
+    margin-bottom: 35px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(226, 222, 222);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.divTitulo{
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(-229deg, #1E90FF, #41d1c0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+}
+
+.classificacao{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    background: rgb(3, 65, 103);
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.h1Material{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pMaterial, .dataMaterial{
+    margin-top: -15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(235, 234, 234);
+}
+
+.divInfo{
+    width: 40%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 80%;
+}
+
+.subtitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: 1475d6;;
+}
+
+.texto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(93, 87, 87);
+}
+
+.divBotoes{
+    width: 30%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 5px 5px 0;
+}
+
+.texto1{
+    width: 80%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: rgb(93, 87, 87);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #1E90FF;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #18bdaa;
+}
+
+.btn:hover + .moldura{
+    cursor: pointer;
+    background: #18bdaa;
+}
+
+.linha{
+    position: relative;
+    width: 80%;
+    height: 40px;
+}
+
+.moldura{
+    border-radius: 0 5px 5px 0;
+    background: rgb(52, 109, 215);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+}
+
+.iconeMaterial{width: 22.5px;}
+
+.containerPaleta{
+    width: 10%;
+    height: 100%;
+    margin-right: 3%;
+}
+
+.paleta{
+    width: 10%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    border-radius: 7.5px;
+    position: absolute;
+    background: white;
+    color: rgb(105, 103, 103);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border: 1px solid rgb(226, 222, 222);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.cores{
+    width: 80%;
+    height: 70%;
+}
+
+.linhaSelos, .linhaSelos1{
+    display: flex;
+    align-items: center;
+    margin-left: 7.5%;
+    height: 50%;
+}
+
+.linhaSelos1{
+    display: none;
+    color: rgb(241, 239, 239);
+}
+
+.classificacao1, .classificacao2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    background: rgb(3, 65, 103);
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    left: 10px;
+    top: 10px;
+    position: inherit;
+}
+
+.classificacao2{
+    background: rgb(41, 199, 213);
+}
+
+/*@media screen and (max-width: 1150px){
+    .containerPaleta{
+        display: none;
+    }
+
+    .linhaSelos1{
+        display: flex;
+    }
+}*/
+
+@media screen and (max-width: 1000px){
+    .containerPaleta{
+        display: none;
+    }
+
+    .linhaSelos1{
+        display: flex;
+    }
+
+    .containerMaterial{
+        border-top: 70px solid rgb(244, 245, 247);
+        width: 85%;
+    }
+
+    .divMaterial{
+        height: 900px;
+        margin-bottom: 70px;
+        border-radius: 15px;
+    }
+
+    .divTitulo{
+        width: 100%;
+        height: 25%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .classificacao{
+        left: 25px;
+        top: 25px;
+    }
+
+    .h1Material{
+        font-size: 3.5em;
+        margin: 0;
+    }
+
+    .pMaterial, .dataMaterial{
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .divInfo, .divBotoes{
+        width: 50%;
+        height: 75%;
+        border-bottom-left-radius: 15px;
+    }
+
+    .subtitulo, .texto, .texto1{
+        font-size: 2.5em;
+    }
+
+    .divBotoes{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: left;
+        height: 100px;
+        font-size: 2.5em;
+        padding-left: 25px;
+        border-radius: 10px;
+    }
+
+    .linha{
+        height: 100px;
+    }
+
+    .moldura{
+        width: 100px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .iconeMaterial{
+        width: 50px;
+    }
+
+    .classificacao, .classificacao1, .classificacao2{
+        width: 60px;
+        height: 60px;
+    }
+
+    .c{
+        font-size: 3em
+    }
+}

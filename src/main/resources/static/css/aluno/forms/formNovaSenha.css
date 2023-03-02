@@ -1,0 +1,154 @@
+.containerForm{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    z-index: -1;
+}
+
+.containerForm.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.formSenhaNova{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 7.5px;
+}
+
+.headerForm, .inputForm, .footerForm{
+    display: flex;
+}
+
+.headerForm{
+    background: #1E90FF;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 7.5px 7.5px 0 0;
+}
+
+.dadosSenha{
+    width: 75%;
+    height: 65%;
+    flex-direction: column;
+}
+
+.footerForm{
+    width: 75%;
+    height: 20%;
+}
+
+.margem{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.fechar{
+    cursor: pointer;
+}
+
+.linha{
+    margin-top: 15px;
+    position: relative;
+    height: 45px;
+}
+
+.iconeOlho{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+
+.inputSenha{
+    width: 100%;
+    height: 100%;
+    background: rgb(238, 241, 244);
+    border: 1px solid rgb(229, 232, 236);
+    padding: 0 50 0 10;
+    border: 1px solid silver;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inputSenha:hover{
+    border: 1px solid #249df3;
+}
+
+.btnAlterar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1E90FF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnAlterar:hover{
+    cursor: pointer;
+    background: #0760b3;
+}
+
+
+@media screen and (max-width: 1000px){
+    .formSenhaNova{
+        height: 40%;
+        width: 80%;
+        border-radius: 15px;
+    }
+
+    .headerForm{
+        border-radius: 15px 15px 0 0;
+    }
+
+    .dadosSenha{
+        width: 80%;
+    }
+
+    .footerForm{
+        width: 80%;
+    }
+
+    .linha{
+        height: 25%;
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .inputSenha{
+        font-size: 2.5em;
+        padding-right: 150px;
+        padding-left: 30px;
+        border-radius: 10px;
+    }
+
+    .iconeOlho{
+        width: 50px;
+        margin-right: 50px;
+    }
+
+    .btnAlterar{
+        height: 80%;
+        font-size: 2.5em;
+        border-radius: 10px;
+    }
+}

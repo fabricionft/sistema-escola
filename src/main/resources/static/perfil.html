@@ -1,0 +1,208 @@
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8"> <title>Perfil</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/aluno/universal.css">
+		<link rel="stylesheet" type="text/css" href="css/aluno/perfil.css">
+		<link rel="stylesheet" type="text/css" href="css/aluno/forms/formNovaSenha.css">
+
+		<script src="js/aluno/abrirForm.js" defer></script>
+		<script src="js/aluno/perfil.js" defer></script>
+		<script
+				src="https://code.jquery.com/jquery-3.6.1.min.js"
+				integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+				crossorigin="anonymous" defer>
+		</script>
+
+	</head>
+		
+	<body>
+		<!--Form Trocar senha-->
+		<div class="containerForm" id="containerForm">
+			<form class="formSenhaNova">
+				<header class="headerForm">
+					<div class="margem"><a onclick="fecharFormAlterarSenha()" class="fechar">
+						<img src="icon/x.png" width="22px">
+					</a></div>
+				</header>
+				<div class="dadosSenha">
+					<div class="linha">
+						<input type="password" class="inputSenha" id="senhaAtual" placeholder="Senha atual">
+						<img src="icon/olho.png" width="25px" class="iconeOlho" id="senha1">
+					</div>
+
+					<div class="linha">
+						<input type="password" class="inputSenha" id="novaSenha" placeholder="Nova senha">
+						<img src="icon/olho.png" width="25px" class="iconeOlho" id="senha2">
+					</div><div class="linha">
+
+					<input type="password" class="inputSenha" id="confNovaSenha" placeholder="Confirmação">
+					<img src="icon/olho.png" width="25px" class="iconeOlho" id="senha3">
+				</div>
+				</div>
+				<footer class="footerForm">
+					<a class="btnAlterar" onclick="trocarSenha()">Alterar</a>
+				</footer>
+			</form>
+		</div>
+
+		<main>
+			<!--Header-->
+			<header class="containerAluno">
+				<img src="img/fundoPerfil.png" class="fundoPerfil">
+				<div class="div1">
+					<a href="menuAluno.html">
+						<img src="icon/botao-de-retorno.png" class="btnVoltar">
+					</a>
+				</div>
+				<div class="div2">
+					<div class="moldura">
+						<img src="icon/perfil.png" class="img" id="masculino">
+						<img src="icon/menina.png" class="img" id="feminino">
+					</div>
+				</div>
+				<div class="div3">
+					<h1 id="aluno" class="nomeAluno"></h1>
+				</div>
+			</header>
+
+			<div class="containerDados">
+
+				<div class="divInfo">
+
+					<div class="divTitulo">
+						<h1 class="h1Titulo">Dados pessoais</h1>
+					</div>
+
+					<div class="divInfos">
+						<p class="tit">Nome</p>
+						<p class="cont" id="nome"></p>
+						
+						<p class="tit">Data de nascimento</p>
+						<p class="cont" id="dataNascimento"></p>
+
+						<p class="tit">Mãe</p>
+						<p class="cont" id="mae"></p>
+
+						<p class="tit">Cidade</p>
+						<p class="cont" id="cidade"></p>
+					</div>
+
+				</div>
+				<div class="divInfo">
+
+					<div class="divTitulo">
+						<h1 class="h1Titulo">Dados escolares</h1>
+					</div>
+
+					<div class="divInfos">
+						<p class="tit">Escola</p>
+						<p class="cont" id="escola"></p>
+
+						<p class="tit">Turma</p>
+						<p class="cont" id="turma"></p>
+
+						<p class="tit">RA</p>
+						<p class="cont" id="ra"></p>
+
+						<p class="tit">Matricula</p>
+						<p class="cont" id="matricula"></p>
+					</div>
+
+				</div>
+
+				<div class="divInfo">
+
+					<div class="divTitulo">
+						<h1 class="h1Titulo">Dados de login</h1>
+					</div>
+
+					<div class="divInfos">
+						<p class="tit">Usuário</p>
+						<p class="cont" id="usuario"></p>
+						
+						<p class="tit">Senha</p>
+						<p class="cont" id="senha"></p><br><br>
+
+						<div class="divBotao">
+							<button onclick="abrirFormAlterarSenha()" class="btn">Alterar senha</button>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</main>
+
+
+		<!--Footer-->
+		<footer class="containerFooter">
+
+			<div class="divFooterMargem">
+				<!--1-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Informações sobre</h1>
+					<p class="pFooter">Este site terá como objetivo proporcionar uma experiência mais agradável para pessoas dentro de uma escola</p>
+				</div>
+
+				<!--2-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Contatos</h1>
+					<p class="pFooter">fabriciodozerofz859@gmail.com</p>
+					<p class="pFooter">(19) 98459-7236</p>
+				</div>
+
+				<!--3-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Dúvidas</h1>
+
+					<a class="aFooter">Como conseguir uma conta</a> <br>
+
+					<a class="aFooter">Como acessar minha conta</a> <br>
+
+					<a class="aFooter">Como recuperar senha</a> <br>
+				</div>
+
+				<!--4-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Redes sociais</h1>
+
+					<a class="aFooter">linkedin</a> <br>
+
+					<a class="aFooter">Instagram</a> <br>
+
+					<a class="aFooter">Github</a> <br>
+
+					<a class="aFooter">Facebook</a> <br>
+				</div>
+			</div>
+
+			<!--Redes sociais-->
+			<div class="divFooterRedes">
+				<h1 class="h1Footer">Redes sociais</h1>
+
+				<a class="aFooter" href="https://www.linkedin.com/in/fabricio-nft">
+					<img class="icon" src="icon/linkedin.png">
+				</a>
+
+				<a class="aFooter" href="https://www.instagram.com/fabricio_nft/">
+					<img class="icon" src="icon/instagram.png">
+				</a>
+
+				<a class="aFooter" href="https://github.com/fabricionft">
+					<img class="icon" src="icon/github-sign.png">
+				</a>
+
+				<a class="aFooter" href="https://youtube.com.br/@fabricionft">
+					<img class="icon" src="icon/youtube.png">
+				</a>
+			</div>
+
+		</footer>
+			
+	</body>
+
+</html>
