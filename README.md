@@ -7,24 +7,41 @@ O SPGE é um sistema Web que possui o objetivo de facilitar a vida dos estudante
 <br><br>
 
 <h2>Tecnologias utilizadas 💻</h2>
-* Java (Spring Boot/Spring Data)<br>
-* Javascript + JQuery<br>
-* HTML + CSS<br>
-* Banco de dados MySQL
-<br><br>
+<ul>
+  <li>Java + Spring Boot;</li>
+  <li>Javascript + JQuery;</li>
+  <li>HTML + CSSS;</li>
+  <li>Banco de dados MySQL.</li>
+</ul>
+<br>
+
+<h2>Dependências Maven utilizadas ♦️</h2>
+<ul>
+  <li>Spring Web;</li>
+  <li>Spring Data JPA;</li>
+  <li>MySQL Driver;</li>
+  <li>DevTools.</li>
+</ul>
+<br>
 
 <h2>Recursos dos alunos 🧑‍🎓</h2>
-* Visualização e emissão de pdf das notas;<br>
-* Vizualização dos dados pessoais/escolares;<br>
-* Vizualização dos dias e conteúdos de futuras provas;<br>
-* Vizualização dos produtos vendidos na escola;<br>
-* Vizualização dos recados emitidos pela escola;<br>
-* Vizualização de conteúdos e links adcionais (complementares âs aulas).<br><br>
+<ul>
+  <li>Visualização e emissão de pdf das notas;</li>
+  <li>Vizualização dos dados pessoais/escolares;</li>
+  <li>Vizualização dos dias e conteúdos de futuras provas;</li>
+  <li>Vizualização dos produtos vendidos na escola;</li>
+  <li>Vizualização dos recados emitidos pela escola;</li>
+  <li>Vizualização de conteúdos e links adcionais (complementares âs aulas).</li>
+</ul>
+<br>
 <img src="assets/menu-aluno.png" width="100%">
 <br>
 
 <h2>Recursos dos funcionários/professores 👩‍🏫:</h2>
-* Inserção, edição e exclusão de todas as informações citadas no tópico anterior, além claro, da inserção dos próprios alunos no sistema.<br><br>
+<ul>
+  <li>Inserção, edição e exclusão de todas as informações citadas no tópico anterior, além claro, da inserção dos próprios alunos no sistema.</li>
+</ul>
+<br>
 <img src="assets/menu-funcionario.png" width="100%">
 <br>
 
@@ -34,13 +51,14 @@ Com tal modelo seria certo de não ter nehuma irregularidade acerca das informa�
 <br><br>
 
 <h2>Passo a passo para rodar em seu PC</h2>
-* Possua uma JDK 17 ou superior instalada em seu PC;<br>
-* Baixe ou clone o projeto em seu PC;<br>
-* Configure algum banco de dados MySQL, seja ele local ou de algum serviço externo (recomendo os do site RailWay) dentro do applications.properties. Para isso você precisa do 
-host, nome, porta, usuario e senha do banco de dados;<br>
-* Dê build ou compile no projeto usando alguma IDE (recomendo Intelij), para baixar todas as dependências;<br>
-* Por fim, dê start na classe principal do projeto (FutshopApplication) e pronto, ele já funcionará.
-<br><br>
+<ul>
+  <li>Possua uma JDK 17 ou superior instalada em seu PC;</li>
+  <li> Baixe ou clone o projeto em seu PC;</li>
+  <li>Configure algum banco de dados MySQL, seja ele local ou de algum serviço externo (recomendo os do site RailWay) dentro do applications.properties. Para isso você precisa   do host, nome, porta, usuario e senha do banco de dados;</li>
+  <li>Dê build ou compile no projeto usando alguma IDE (recomendo Intelij), para baixar todas as dependências;</li>
+  <li>Por fim, dê start na classe principal do projeto (FutshopApplication) e pronto, ele já funcionará.</li>
+</ul>
+<br>
 
 <h2>Link video 📺</h2>
 https://youtu.be/6pFGh1nESVI
